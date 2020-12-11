@@ -1,0 +1,34 @@
+2 graficos em figuras diferentes:
+
+
+t=0:0.01:10;
+w0=1;
+figure
+plot(t,-sqrt(3)*sin(w0*t),'linewidth', 2,'color','blue');
+hold on;
+xlabel('Eixo x');
+ylabel ('Eixo y');
+title ('f(t)=-sqrt(3)sin(w0*t)');
+grid on;
+
+figure
+plot(t,cos(w0*t),'linewidth',2,'color','green');
+hold on;
+xlabel('Eixo x');
+ylabel ('Eixo y');
+title ('f(t)=cos(w0*t)');
+grid on;
+
+///////////////////////////////////////
+
+1 grafico apenas
+
+
+w0=1;
+plot(t,cos(w0*t)-sqrt(3)*sin(w0*t),'linewidth',2,'color','red');
+hold on;
+xlabel('t');
+ylabel('x(t)');
+axis([0 10]);
+title('x(t)=cos(w0*t)-sqrt(3)*sin(w0*t');
+
